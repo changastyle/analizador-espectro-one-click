@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="vista.MainController">
+  <children>
+    <Pane prefHeight="200.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <TextField fx:id="txtIP" alignment="TOP_LEFT" layoutX="90.0" layoutY="14.0" onKeyReleased="#verificarFormatoIP" prefWidth="396.0" promptText="192.168.1.1" text="" />
+        <TextField fx:id="txtUsuario" layoutX="90.0" layoutY="45.0" prefWidth="396.0" promptText="root" text="" />
+        <TextField fx:id="txtPassword" layoutX="90.0" layoutY="78.0" prefWidth="396.0" promptText="tecacc" text="" />
+        <Label layoutX="14.0" layoutY="17.0" text="Direccion IP:" />
+        <Label layoutX="14.0" layoutY="48.0" text="Usuario:" />
+        <Label layoutX="14.0" layoutY="81.0" text="Password:" />
+        <Button fx:id="btnConectar" cancelButton="false" defaultButton="true" disable="false" focusTraversable="true" layoutX="17.0" layoutY="134.0" mnemonicParsing="false" onAction="#clickBtnConectar" prefHeight="51.9609375" prefWidth="472.0" text="Conectar !" textAlignment="CENTER" textOverrun="ELLIPSIS" visible="true">
+          <font>
+            <Font size="24.0" />
+          </font>
+        </Button>
+        <Label layoutX="125.0" layoutY="109.0" text="Por defecto usuario y contraseña en blanco son (root, tecacc)." />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

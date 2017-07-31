@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Analizador Espectro One Click.jnlp">
+  <information>
+    <title>Analizador Espectro One Click</title>
+    <vendor>NICOLAS</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Analizador_Espectro_One_Click.jar" size="12441" download="eager" />
+    <jar href="lib\jsch-0.1.53.jar" size="278297" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Analizador Espectro One Click" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="app.app"  name="Analizador Espectro One Click" />
+  <update check="always"/>
+</jnlp>
